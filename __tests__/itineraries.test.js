@@ -73,7 +73,7 @@ describe('Itineraries routes', () => {
                     eventCity: 'Stockholm',
                     eventDaysDuration: 2,
                     __v: 0
-                })
-            })
+                });
+            });
     });
 });
