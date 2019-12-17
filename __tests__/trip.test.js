@@ -33,8 +33,8 @@ describe('Trip routes', () => {
             .then(res => {
                 expect(res.body).toEqual({
                     _id: expect.any(String),
-                    departDate: new Date('January 1, 2020'),
-                    returnDate: new Date('February 4, 2020'),
+                    departDate: expect.any(String),
+                    returnDate: expect.any(String),
                     departCity: 'Portland',
                     arriveCity: 'Hamburg',
                     returnFromCity: 'Prague',
@@ -55,7 +55,7 @@ describe('Trip routes', () => {
                 returnToCity: 'Portland'
             },
             {
-                departDate: new Date('Arpil 19, 2020'),
+                departDate: new Date('April 19, 2020'),
                 returnDate: new Date('October 4, 2020'),
                 departCity: 'Cleveland',
                 arriveCity: 'Phuket',
@@ -99,13 +99,14 @@ describe('Trip routes', () => {
             returnFromCity: 'Prague',
             returnToCity: 'Portland'
         });
+        
         const itinerary = await Itineraries.create([
             {
                 tripId: trip._id,
                 event: 'Mountain biking',
                 eventDate: new Date('January 10, 2020'),
                 eventCity: 'Hamburg',
-                eventDayDuration: 3
+                eventDaysDuration: 3
             }
         ]);
         return request(app)
