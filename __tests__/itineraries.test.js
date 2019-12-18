@@ -12,9 +12,9 @@ describe('Itineraries routes', () => {
     });
 
     beforeEach(() => {
-        return mongoose.connection.dropDatabase();
+        mongoose.connection.dropDatabase();
     });
-
+    
     let trip;
     beforeEach(async() => {
         trip = await Trip.create({
@@ -26,12 +26,18 @@ describe('Itineraries routes', () => {
             returnToCity: 'Portland'
         });
     });
+    console.log(trip);
+
 
     afterAll(() => {
         return mongoose.connection.close();
     });
 
-    it('creates an itinerary item', async() => {
+    console.log(trip);
+
+    it.only('creates an itinerary item', () => {
+        console.log(trip);
+        
         return request(app)
             .post('/api/v1/itineraries')
             .send({

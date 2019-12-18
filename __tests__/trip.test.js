@@ -1,8 +1,10 @@
 require('dotenv').config();
 const app = require('../lib/app');
+const superagent = require('superagent');
 const connect = require('../lib/utils/connect');
 const request = require('supertest');
 const mongoose = require('mongoose');
+const getWeather = require('../lib/services/weather');
 const Trip = require('../lib/models/Trip');
 const Itineraries = require('../lib/models/Itineraries');
 
@@ -180,5 +182,27 @@ describe('Trip routes', () => {
             .then(itineraries => {
                 expect(itineraries).toHaveLength(0);
             });
+    });
+
+    it('can get a woeid for a city', () => {
+        return superagent
+            .get('metaweather.com/api/location/search/?query=Portland')
+            .then(res => {
+                expect(res.body[0].woeid).toEqual(2475687);
+            });
+    });
+
+    it('can get weather using woeid and date', () => {
+        const date = new Date('October 4, 2011');
+        const woeid = 2475687;
+        return superagent
+            .get(`metaweather.com/api/location/${woeid}/${date.getFullYear()}/${date.getMonth() + 1}/${date.getDate()}`)
+            .then(res => {
+                expect(res.body[0].woeid).toEqual(2475687);
+            });
+    });
+
+    it('returns weather body', () => {
+        expect(getWeather('Cleveland', 2010, 10, 4)).toEqual('this');
     });
 });
