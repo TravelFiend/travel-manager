@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1576631706180" clover="3.2.0">
-  <project timestamp="1576631706180" name="All files">
-    <metrics statements="83" coveredstatements="55" conditionals="7" coveredconditionals="1" methods="32" coveredmethods="14" elements="122" coveredelements="70" complexity="0" loc="83" ncloc="83" packages="6" files="10" classes="10"/>
+<coverage generated="1576632393515" clover="3.2.0">
+  <project timestamp="1576632393515" name="All files">
+    <metrics statements="76" coveredstatements="56" conditionals="7" coveredconditionals="1" methods="30" coveredmethods="18" elements="113" coveredelements="75" complexity="0" loc="76" ncloc="76" packages="6" files="9" classes="9"/>
     <package name="lib">
       <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="app.js" path="/Users/mikeeg/alchemy/career-track/travel-manager/lib/app.js">
@@ -17,7 +17,7 @@
       </file>
     </package>
     <package name="lib.middleware">
-      <metrics statements="18" coveredstatements="5" conditionals="6" coveredconditionals="0" methods="4" coveredmethods="0"/>
+      <metrics statements="12" coveredstatements="3" conditionals="6" coveredconditionals="0" methods="2" coveredmethods="0"/>
       <file name="error.js" path="/Users/mikeeg/alchemy/career-track/travel-manager/lib/middleware/error.js">
         <metrics statements="8" coveredstatements="2" conditionals="6" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="2" type="stmt"/>
@@ -28,15 +28,6 @@
         <line num="12" count="0" type="stmt"/>
         <line num="14" count="0" type="stmt"/>
         <line num="16" count="0" type="stmt"/>
-      </file>
-      <file name="fetch-weather.js" path="/Users/mikeeg/alchemy/career-track/travel-manager/lib/middleware/fetch-weather.js">
-        <metrics statements="6" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
-        <line num="1" count="2" type="stmt"/>
-        <line num="3" count="2" type="stmt"/>
-        <line num="4" count="0" type="stmt"/>
-        <line num="5" count="0" type="stmt"/>
-        <line num="7" count="0" type="stmt"/>
-        <line num="10" count="0" type="stmt"/>
       </file>
       <file name="not-found.js" path="/Users/mikeeg/alchemy/career-track/travel-manager/lib/middleware/not-found.js">
         <metrics statements="4" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
@@ -73,17 +64,16 @@
       </file>
     </package>
     <package name="lib.routes">
-      <metrics statements="22" coveredstatements="18" conditionals="0" coveredconditionals="0" methods="14" coveredmethods="10"/>
+      <metrics statements="21" coveredstatements="21" conditionals="0" coveredconditionals="0" methods="14" coveredmethods="14"/>
       <file name="itineraries.js" path="/Users/mikeeg/alchemy/career-track/travel-manager/lib/routes/itineraries.js">
-        <metrics statements="8" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
         <line num="1" count="2" type="stmt"/>
         <line num="2" count="2" type="stmt"/>
-        <line num="3" count="2" type="stmt"/>
-        <line num="5" count="2" type="stmt"/>
-        <line num="7" count="0" type="stmt"/>
-        <line num="9" count="0" type="stmt"/>
-        <line num="13" count="0" type="stmt"/>
-        <line num="15" count="0" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
       </file>
       <file name="trip.js" path="/Users/mikeeg/alchemy/career-track/travel-manager/lib/routes/trip.js">
         <metrics statements="14" coveredstatements="14" conditionals="0" coveredconditionals="0" methods="10" coveredmethods="10"/>
@@ -107,14 +97,14 @@
       <metrics statements="8" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="1"/>
       <file name="weather.js" path="/Users/mikeeg/alchemy/career-track/travel-manager/lib/services/weather.js">
         <metrics statements="8" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="1"/>
-        <line num="1" count="2" type="stmt"/>
-        <line num="3" count="2" type="stmt"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
         <line num="7" count="0" type="stmt"/>
         <line num="9" count="0" type="stmt"/>
         <line num="12" count="0" type="stmt"/>
-        <line num="14" count="0" type="stmt"/>
-        <line num="19" count="2" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
       </file>
     </package>
     <package name="lib.utils">
