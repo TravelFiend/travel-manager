@@ -267,7 +267,7 @@ describe('Trip routes', () => {
                     '_id': expect.any(String),
                     'event': 'Snowboard the Alps',
                     'eventCity': 'Prague',
-                    'eventDate': '2020-01-02T08:00:00.000Z',
+                    'eventDate': expect.any(String),
                     'eventDaysDuration': 2,
                     'tripId': expect.any(String),
                     'woeid': 796597
