@@ -222,21 +222,21 @@ describe('Trip routes', () => {
         getWeather(2475687, 2017, 10, 4)
             .then(res => {
                 expect(res).toEqual({
-                    id: 4779895051780096,
-                    weather_state_name: 'Heavy Cloud',
-                    weather_state_abbr: 'hc',
-                    wind_direction_compass: 'NNE',
-                    created: '2019-02-22T08:30:34.546252Z',
-                    applicable_date: '2019-02-21',
-                    min_temp: -1.9900000000000002,
-                    max_temp: 8.6,
-                    the_temp: 7.195,
-                    wind_speed: 4.351856345101937,
-                    wind_direction: 30.99303878738074,
-                    air_pressure: 1018.31,
-                    humidity: 71,
-                    visibility: 6.904055316949018,
-                    predictability: 71
+                    'air_pressure': 1010.015,
+                    'applicable_date': '2017-10-04',
+                    'created': '2017-10-05T05:52:35.716640Z',
+                    'humidity': 52,
+                    'id': 5316740053467136,
+                    'max_temp': 21.76,
+                    'min_temp': 6.425000000000001,
+                    'predictability': 70,
+                    'the_temp': 21.884999999999998,
+                    'visibility': 16.984870854211405,
+                    'weather_state_abbr': 'lc',
+                    'weather_state_name': 'Light Cloud',
+                    'wind_direction': 29.999999999999996,
+                    'wind_direction_compass': 'NNE',
+                    'wind_speed': 1.7199147303606936,
                 });
             });
     });
